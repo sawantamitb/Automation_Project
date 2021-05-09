@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Sanity Test Suite">
+<listeners>
+		<listener class-name="listener.TestAllureListener" />
+		<listener class-name="listener.ExtentReportListener" />
+		<listener class-name="listener.pdfListener" />
+		</listeners>
+	<test name="Cowin App Sanity Test Cases" parallel = "tests">
+		<classes>
+			<class name="testcases.ValidLoginPageTest"></class>
+		</classes>
+	</test>
+</suite>
